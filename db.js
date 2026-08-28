@@ -7,6 +7,8 @@ const Database = require('better-sqlite3')
 const databasePath =
   process.env.DATABASE_PATH || path.join(__dirname, 'data', 'app.db')
 
+console.log(`Using database: ${databasePath}`)
+
 // Create the data directory if it does not exist.
 fs.mkdirSync(path.dirname(databasePath), { recursive: true })
 

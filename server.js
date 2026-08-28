@@ -1,10 +1,11 @@
 const express = require('express')
-const db = require('./db')
 const helmet = require('helmet')
 const rateLimit = require('express-rate-limit')
-
 const app = express()
+const db = require('./db')
+
 const port = process.env.PORT || 3000
+
 app.use(express.json())
 
 app.set('trust proxy', 1)

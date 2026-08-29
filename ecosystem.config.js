@@ -14,6 +14,7 @@ module.exports = {
         PORT: 3000,
         DATABASE_PATH: '/var/lib/hg26-app/app.db',
       },
+      env_file: '/etc/hg26-app.env',
     },
   ],
 }

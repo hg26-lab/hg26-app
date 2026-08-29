@@ -50,7 +50,6 @@ const limiter = rateLimit({
   standardHeaders: true,
   legacyHeaders: false,
 })
-const crypto = require('node:crypto')
 
 function requireApiKey(req, res, next) {
   const suppliedKey = req.get('x-api-key')
